@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+    <link rel="stylesheet" href="../../resources/css/lib/swiper-bundle.min.css">
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- //header -->
+        <header id="lnb">
+            <script>
+                $(document).ready(function(){
+                    document.charset="euc-kr";
+                    $("#lnb").load("../include/inc_header_sub.html");
+                });
+            </script>
+        </header>
+        <!-- header// -->
+        <!-- s:menuWrap -->
+        <div id="menuWrap">
+            <script>
+            $(document).ready(function(){
+                document.charset="euc-kr";
+                $("#menuWrap").load("../include/inc_menu.html");
+            });
+            </script>
+        </div>
+        <!-- e:menuWrap -->
+        <form>
+            <div class="contents-wrap">
+                <section class="steps-container">
+                    <div class="steps-wrap">
+                        <div class="step-item active"></div>
+                        <div class="step-item active"></div>
+                        <div class="step-item active"></div>
+                        <div class="step-item active"></div>
+                        <div class="step-item active"></div>
+                        <div class="step-item active"></div>
+                        <div class="step-item active"></div>
+                        <div class="step-item active"></div>
+                        <div class="step-item active"></div>
+                        <div class="step-item active"></div>
+                    </div>
+                </section>
+                <section class="check-information">
+                    <div class="swiper mySwiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="information6.html">
+                                    <img src="../../resources/images/common/image_1.png" alt="방1">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="information6.html">
+                                    <img src="../../resources/images/common/image_2.png" alt="방2">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </section>
+                <section>
+                    <div class="form-wrap">
+                        <div class="form-group">
+                            <div class="form-control select between"  onclick="openPopupUp('AUTHOR')">
+                                <p>Transation method</p>
+                                <a href="javascript:" tabindex="-1"><span>Sale</span></a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-control select between" onclick="openPopupUp('BUILDING_TYPE')">
+                                <p>Building type</P>
+                                <a href="javascript:" tabindex="-1"><span>Apartment</span></a>
+                            </div>
+                        </div>
+
+                        <div class="text-wrap">
+                            <p class="tit">Address</p>
+                        </div>
+                        <div class="info-group2">
+                            <a href="FILL-APP-PR-003.html"><span>Philippines</span></a>
+                            <button type="button" name="edit" onclick="location.href='FILL-APP-PR-003.html'" class="checkNic">Edit</button>
+                        </div>
+                        
+                        <div class="text-wrap">
+                            <p class="tit">Transaction method</p>
+                        </div>
+                        <div class="info-group2">
+                            <a href="FILL-APP-PR-004.html"><span>Sale ₱7,000,000</span></a>
+                            <button type="button" name="edit" onclick="location.href='FILL-APP-PR-004.html'" class="checkNic">Edit</button>
+                        </div>
+                        <div class="text-wrap">
+                            <p class="tit">Property information</p>
+                        </div>
+                        <div class="info-group2">
+                            <a href="FILL-APP-PR-007.html">
+                                <span>1,200 sqft</span>
+                                <span>15 Floor</span>
+                                <span>3 Beds / 2 Baths</span>
+                            </a>
+                            <button type="button" name="edit" onclick="location.href='FILL-APP-PR-007.html'" class="checkNic">Edit</button>
+                        </div>
+                        <div class="text-wrap">
+                            <p class="tit">Conditions of occupancy</p>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-control select between" onclick="openPopupUp('LOAN_YN')" tabindex="0">
+                                <p>Loan</p>
+                                <a href="javascript:" tabindex="-1"><span>Confirm</span></a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-control select between" onclick="openPopupUp('PET_YN')" tabindex="0">
+                                <p>Pet</p>
+                                <a href="javascript:" tabindex="-1"><span>Confirm</span></a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-control select between" onclick="openPopupUp('PARK_YN')" tabindex="0">
+                                <p>Parking</p>
+                                <a href="javascript:" tabindex="-1"><span>Confirm</span></a>
+                            </div>
+                        </div>
+                        <div class="text-wrap">
+                            <p class="tit">Property introduce</p>
+                        </div>
+                        <div class="info-group2">
+                            <a href="FILL-APP-PR-009.html">
+                                <span>This condo is located at 14651 Philipp
+                                    ine #5301, Houston, TX.
+                                    <br>
+                                    <br>
+                                    14651 Philipine #5301 is in Houston,
+                                    TX and in ZIP code 77040.
+                                    <br>
+                                    <br>
+                                    This property has 2 bedrooms, 2bath
+                                    rooms and approximately 1,200 sqft
+                                    of floor space.
+                                    </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="fixed-btn-wrap">
+                    <div class="fixed-btn-wrap relative">
+                        <div class="btn-cont-wrap">
+                            <a href="../list/list2.html" class="btn btn-primary">Confirm</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        }
+    });
+</script>
+
+<div id="AUTHOR" class="layerpopup layer-up" tabindex="0">
+    <div class="content-wrap">
+        <div class="pop-header">
+            <h2 class="pop-title">Transation method</h2>
+            <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+        </div>
+        <div class="ly-scroll-con ly-select">
+            <ul class="ly-select-list">
+                <li><button data-code="1">Landlord</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button data-code="2">Tenant</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button data-code="3">Agent</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="BUILDING_TYPE" class="layerpopup layer-up" tabindex="0">
+    <div class="content-wrap">
+        <div class="pop-header">
+            <h2 class="pop-title">Building type</h2>
+            <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+        </div>
+        <div class="ly-scroll-con ly-select">
+            <ul class="ly-select-list">
+                <li><button data-code="1">Apartment</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button data-code="2">Condo</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button data-code="3">Studio</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button data-code="4">House</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button data-code="5">Duplex</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button data-code="6">Bungalow</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="RENT_TYPE" class="layerpopup layer-up" tabindex="0">
+    <div class="content-wrap">
+        <div class="pop-header">
+            <h2 class="pop-title">Transation method</h2>
+            <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+        </div>
+        <div class="ly-scroll-con ly-select">
+            <ul class="ly-select-list">
+                <li><button data-code="1" >Sale</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button data-code="2" >Rent</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="LOAN_YN" class="layerpopup layer-up" tabindex="0">
+    <div class="content-wrap">
+        <div class="pop-header">
+            <h2 class="pop-title">Loan</h2>
+            <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+        </div>
+        <div class="ly-scroll-con ly-select">
+            <ul class="ly-select-list">
+                <li><button data-code="Y">Confirm</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button data-code="N">Unavailable</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="PET_YN" class="layerpopup layer-up" tabindex="0">
+    <div class="content-wrap">
+        <div class="pop-header">
+            <h2 class="pop-title">Pet</h2>
+            <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+        </div>
+        <div class="ly-scroll-con ly-select">
+            <ul class="ly-select-list">
+                <li><button data-code="Y">Confirm</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button data-code="N">Unavailable</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="PARK_YN" class="layerpopup layer-up" tabindex="0">
+    <div class="content-wrap">
+        <div class="pop-header">
+            <h2 class="pop-title">Parking</h2>
+            <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+        </div>
+        <div class="ly-scroll-con ly-select">
+            <ul class="ly-select-list">
+                <li><button data-code="0">0</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button data-code="1">1</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button data-code="2">2</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+            </ul>
+        </div>
+    </div>
+</div>
+</html>

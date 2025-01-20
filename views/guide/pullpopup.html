@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+    
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- //header -->
+        <header id="lnb">
+            <a href="javascript:void(0);" onclick="" class="btn-prev header-btn">이전</a>
+                <h1 class="title">
+                    title
+                </h1>
+                <a href="javascript:void(0)" class="btn-menu header-btn">메뉴</a>
+        </header>
+        <!-- header// -->
+        <!-- s:menuWrap -->
+        <div id="menuWrap">
+            <script>
+            $(document).ready(function(){
+                document.charset="euc-kr";
+                $("#menuWrap").load("../include/inc_menu.html");
+            });
+            </script>
+        </div>
+        <!-- e:menuWrap -->
+        <form>
+            <div class="contents-wrap">
+                <section class="form-wrap">
+                    <div class="btn-wrap btn-text">
+                        <a href="#none" class="btn" onclick="openPopupUp('lyPullPop02')">Terms and Conditions of Service
+                        </a><!--서비스 이용약관-->
+                    </div>
+                </section>
+            </div>
+        </form>
+    </div>
+</body>
+<div id="lyPullPop02" class="layerpopup laypop-all">
+    <div class="content-wrap">
+        <div class="pop-header">
+            <h2 class="pop-title">
+                Title
+            </h2>
+            <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+        </div>
+
+        <div class="pop-con-wrap" id="">
+            <section class="info-img-wrap">
+                <div class="text-wrap">
+                    <p class="tit">Philwapp Privacy Policy</p>
+                </div>
+            </section>
+        </div>
+
+        <section class="fixed-btn-wrap">
+            <div class="btn-wrap">
+                <button type="button" class="btn btn-primary">OK</button>
+            </div>
+        </section>
+    </div>
+</div>
+
+</html>

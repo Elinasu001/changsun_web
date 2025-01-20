@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- //header -->
+        <header id="lnb">
+            <script>
+                $(document).ready(function(){
+                    document.charset="euc-kr";
+                    $("#lnb").load("../include/inc_header.html");
+                });
+            </script>
+        </header>
+        <!-- header// -->
+        <!-- s:menuWrap -->
+        <div id="menuWrap">
+            <script>
+            $(document).ready(function(){
+                document.charset="euc-kr";
+                $("#menuWrap").load("../include/inc_menu.html");
+            });
+            </script>
+        </div>
+        <!-- e:menuWrap -->
+        <form>
+            <div class="contents-wrap">
+                <section class="steps-container">
+                    <div class="steps-wrap">
+                        <div class="step-item active"></div>
+                        <div class="step-item active"></div>
+                        <div class="step-item active"></div>
+                        <div class="step-item active"></div>
+                        <div class="step-item active"></div>
+                        <div class="step-item"></div>
+                        <div class="step-item"></div>
+                        <div class="step-item"></div>
+                        <div class="step-item"></div>
+                        <div class="step-item"></div>
+                    </div>
+                </section>
+                <section>
+                    <div class="info-img-group">
+                        <div class="info-img info4"></div>
+                        <p>Select transaction method</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="form-wrap write">
+                        <div class="form-group">
+                            <div class="form-control select between" onclick="openPopupUp('lySel')" tabindex="0">
+                                <p>Transation method</P>
+                                <a href="#none" tabindex="-1"><span>Sale</span></a>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="amount">Price</label>
+                            <div class="amount">
+                                <input type="text" class="form-control amount-num" id="amount" placeholder="0" inputmode="numeric"><!--inputmode="numeric" : 세자리 수마다 콤마 적용-->
+                                <span class="amount-txt">₱</span>
+                            </div>
+                            <p class="subtext">~</p>
+                            <div class="amount">
+                                <input type="text" class="form-control amount-num" id="amount" placeholder="0" inputmode="numeric"><!--inputmode="numeric" : 세자리 수마다 콤마 적용-->
+                                <span class="amount-txt">₱</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="fixed-btn-wrap">
+                    <div class="fixed-btn-wrap relative">
+                        <div class="btn-wrap">
+                            <a href="FILL-APP-PR-004.html" class="btn btn-canpr">Prev</a>
+                            <a href="FILL-APP-PR-006.html" class="btn btn-primary">Next</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<div id="lySel" class="layerpopup layer-up" tabindex="0"><!-- [D] 클래스 has-button 추가 시 하단 fixed 버튼 있을 시 스타일 노출-->
+    <div class="content-wrap">
+        <div class="pop-header">
+            <h2 class="pop-title">Transation method</h2>
+            <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+        </div>
+        <div class="ly-scroll-con ly-select">
+            <ul class="ly-select-list">
+                <li><button>Sale</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button>Rent</button></li>
+            </ul>
+        </div>
+    </div>
+</div>

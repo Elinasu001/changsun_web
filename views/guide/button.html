@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+    <!-- <link rel="stylesheet" href="../resources/css/lib/new_renewal.css"> -->
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+    <!-- <script type="text/javascript" src="../resources/js/lib/ui.js"></script> -->
+</head>
+<style>
+    .guide { padding-top:15px; color:#555555; }
+    .pb10 { padding-top:25px; }
+    .padding { padding:25px 0 10px; }
+    .relative { position: relative; background-color: #ffffff; }
+    .black { background-color: #000000; }
+</style>
+
+<body>
+    <div class="wrap">
+        <!-- //header -->
+        <div  class="contents-wrap">
+            <h2 class="guide">1. Button-Normal</h2>
+            <section>
+                <div class="fixed-btn-wrap relative">
+                    <div class="btn-cont-wrap padding">
+                        <a href="#none" class="btn btn-primary">Buutton(primary)</a>
+                    </div>
+                    <div class="btn-cont-wrap padding">
+                        <a href="#none" class="btn btn-canpr">Button(normal/cancle)</a>
+                    </div>
+                    <div class="btn-cont-wrap padding">
+                        <a href="#none" class="btn disabled">Buutton(disabled)</a>
+                    </div>
+                </div>
+            </section>
+
+            <h2>2. Button-2단</h2>
+            <section>
+                <div class="fixed-btn-wrap relative padding">
+                    <div class="btn-wrap">
+                        <a href="#none" class="btn btn-canpr">Prev</a>
+                        <a href="#none" class="btn btn-primary">Next</a>
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top:30px;">
+                    <button type="reset" class="text-delete"></button>
+                </div>
+            </section>
+
+            <h2 class="guide">3. Step</h2>
+            <section class="steps-container padding">
+                <div class="steps-wrap">
+                    <div class="step-item active"></div>
+                    <div class="step-item active"></div>
+                    <div class="step-item active"></div>
+                    <div class="step-item active"></div>
+                    <div class="step-item active"></div>
+                    <div class="step-item active"></div>
+                    <div class="step-item"></div>
+                    <div class="step-item"></div>
+                    <div class="step-item"></div>
+                    <div class="step-item"></div>
+                </div>
+            </section>
+
+            <h2 class="guide">4. file</h2>
+            <section class="padding">
+                <div class="thumb-wrap">
+                    <label for="file">
+                        <div class="btn btn-upload"><span>Add Picture</span></div>
+                    </label>
+                    <input type="file" name="file" id="file" multiple="">
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

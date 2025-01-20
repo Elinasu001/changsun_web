@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+    
+</head>
+<body>
+    <div class="wrap">
+        <form>
+            <div class="contents-wrap">
+                <section class="join-img-group join1">
+                    <div class="join-img">이미지</div>
+                </section>
+
+                <section class="join-form form-wrap">
+                    <div class="form-group">
+                        <label for="user_phone">register using your mobile number</label>
+                        <div class="phone-flex">
+                            <div class="phil-img"></div>
+                            <input type="tel" class="form-control phone" id="user_phone" name="tel" maxlength="11" placeholder="Enter your mobile number" inputmode="tel">
+                            <input class="phil-num" type="tel" value="+63" title="tel" id="tel">
+                        </div>
+                    </div>
+                    <div class="check-buttons">
+                        <label for="check-3" class="check-button">
+                            <input type="checkbox" id="check-3" name="terms">
+                            <span class="custom-check"></span>
+                            <span class="text">I am a real estate professional</span>
+                        </label>
+                    </div>
+                    <div class="btn-wrap">
+                        <a href="none" class="btn btn-primary">Register
+                        </a>
+                    </div>
+                    <div class="another-login">
+                        OR
+                    </div>
+                    <div class="list-icon-wrap gfa">
+                        <ul class="list-icon no-arrow">
+                            <li class="google"><a href="#none">Sign up with Google</a></li>
+                            <li class="facebook"><a href="#none">Sign up with Facebook</a></li>
+                            <li class="apple"><a href="#none">Sign up with Apple</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="fixed-btn-wrap">
+                    <div class="btn-cont-wrap btn-text">
+                        <a href="./FILL-APP-LOGIN-001.html" class="btn">Are you already a member?  <span class="blue-txt">Sign in</span></a>
+                    </div>
+                </section>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<div id="lySel" class="layerpopup layer-up" tabindex="0"><!-- [D] 클래스 has-button 추가 시 하단 fixed 버튼 있을 시 스타일 노출-->
+    <div class="content-wrap">
+        <div class="pop-header">
+            <h2 class="pop-title">Transation method</h2>
+            <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+        </div>
+        <div class="ly-scroll-con ly-select">
+            <ul class="ly-select-list">
+                <li><button>Landlord</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button>Tenant</button></li>
+                <li><button>Agent</button></li>
+            </ul>
+        </div>
+    </div>
+</div>

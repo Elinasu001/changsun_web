@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+  <g id="tooltip" transform="translate(-103 -360)">
+    <g id="타원_484" data-name="타원 484" transform="translate(103 362)" fill="none" stroke="#9a9a9a" stroke-width="1">
+      <circle cx="7" cy="7" r="7" stroke="none"/>
+      <circle cx="7" cy="7" r="6.5" fill="none"/>
+    </g>
+    <text id="_" data-name="?" transform="translate(110 373)" fill="#9a9a9a" font-size="12" font-family="SegoeUI, Segoe UI" letter-spacing="-0.05em"><tspan x="-2.689" y="0">?</tspan></text>
+  </g>
+</svg>

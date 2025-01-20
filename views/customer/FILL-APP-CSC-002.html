@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+    <link rel="stylesheet" href="../../resources/css/lib/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="../../resources/css/lib/new_renewal.css"> -->
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+    <!--  -->
+</head>
+
+<body class="scrollX">
+    <div class="wrap">
+        <!-- //header -->
+        <header id="lnb">
+            <script>
+                $(document).ready(function(){
+                    document.charset="euc-kr";
+                    $("#lnb").load("../include/inc_header_sub.html");
+                });
+            </script>
+        </header>
+        <!-- header// -->
+        <!-- s:menuWrap -->
+        <div id="menuWrap">
+            <script>
+            $(document).ready(function(){
+                document.charset="euc-kr";
+                $("#menuWrap").load("../include/inc_menu.html");
+            });
+            </script>
+        </div>
+        <!-- e:menuWrap -->
+        <form>
+            <div class="contents-wrap">
+                <section>
+                    <div class="tab">
+                        <ul class="tab-item type2">
+                            <li data-tab="tab-cont01"><a href="javascript:void(0);">FAQ</a></li>
+                            <li class="on" data-tab="tab-cont02"><a href="javascript:void(0);" title="선택됨">Q&A </a></li>
+                        </ul>
+                        <div id="tab-cont01" class="tab-content dp-none">
+                        </div>
+                        <div id="tab-cont02" class="tab-content">
+                            <div class="text-wrap">
+                                <p class="tit01">If you ask me any questions&#44<br/> I will answer them sincerely&#46;</p>
+                            </div>
+                            <div class="form-wrap">
+                                <div class="form-group">
+                                    <label for="qa_type">Type</label>
+                                    <div class="form-control select between" onclick="openPopupUp('lySel')" tabindex="0">
+                                        <p>Type</p>
+                                        <a href="#none" tabindex="-1"><span>No Min</span></a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="TITLE">Title</label>
+                                    <input id="TITLE" type="text" name="TITLE" class="form-control" placeholder="Please enter your title">
+                                </div>
+                                <div class="text-area line-none">
+                                    <label for="ipt02">CONTENT</label>
+                                    <textarea type="text" id="ipt02" class="inp" name="" value="" placeholder="content" maxlength="" required="" style="height:240px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="fixed-btn-wrap">
+                    <div class="btn-cont-wrap">
+                        <a href="javascript:void(0);" class="btn btn-primary">Registering</a>
+                    </div>
+                </section>
+            </div>
+        </form>
+        <div id="lySel" class="layerpopup layer-up" tabindex="0"><!-- [D] 클래스 has-button 추가 시 하단 fixed 버튼 있을 시 스타일 노출-->
+            <div class="content-wrap">
+                <div class="pop-header">
+                    <h2 class="pop-title">Type</h2>
+                    <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+                </div>
+                <div class="ly-scroll-con ly-select">
+                    <ul class="ly-select-list">
+                        <li><button>Membership information</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                        <li><button>Sale/Advertising Management</button></li>
+                        <li><button>Commodity/Payment Management</button></li>
+                        <li><button>etc</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- <div class="btn-cont-wrap">
+    <a href="#none" class="btn btn-primary">심사요청</a>
+</div> -->

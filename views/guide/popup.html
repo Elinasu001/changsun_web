@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+    
+</head>
+<body>
+    <div class="wrap">
+        <form>
+            <div class="contents-wrap">
+                <section>
+                    <div class="form-wrap">
+                        <div class="form-group">
+                            <div class="form-control select between" onclick="openPopupUp('lySel')" tabindex="0">
+                                <p>Author</P>
+                                <a href="javascript:void(0);" tabindex="-1"><span>Landlord</span></a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-control select between" onclick="openPopupUp('lySel2')" tabindex="0">
+                                <p>Building type</P>
+                                <a href="javascript:void(0);" tabindex="-1"><span>Apartment</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-cont-wrap" onclick="openPopupUp('lySe14')">
+                        <a href="javascript:void(0);" class="btn btn-primary">two button-popup</a>
+                    </div>
+                </section>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<div id="lySel" class="layerpopup layer-up" tabindex="0">
+    <div class="content-wrap">
+        <div class="pop-header">
+            <h2 class="pop-title">Transation method</h2>
+            <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+        </div>
+        <div class="ly-scroll-con ly-select">
+            <ul class="ly-select-list">
+                <li><button>Landlord</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button>Tenant</button></li>
+                <li><button>Agent</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="lySel2" class="layerpopup layer-up" tabindex="0">
+    <div class="content-wrap">
+        <div class="pop-header">
+            <h2 class="pop-title">Building type</h2>
+            <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+        </div>
+        <div class="ly-scroll-con ly-select">
+            <ul class="ly-select-list">
+                <li><button>Apartment</button></li>
+                <li><button>Condo</button></li>
+                <li><button>House</button></li>
+                <li><button>Studio</button></li>
+                <li><button>Duplex</button></li>
+                <li><button>Bungalow</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="lySe14" class="layerpopup layer-up" tabindex="0">
+    <div class="content-wrap">
+        <div class="pop-header close">
+            <h2 class="pop-title">Transation method</h2>
+        </div>
+        <div class="ly-scroll-con">
+            <div class="text-wrap">
+                <p>This will remove your login information from our system and you will not be able to login again. It cannot be undone.</p>
+            </div>
+        </div>
+        <div class="btn-wrap">
+            <a href="javascript:void(0);" class="btn btn-close">cancel</a>
+            <a href="./FILL-APP-MY-004.html" class="btn btn-primary">Delete Your Account</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+<!-- s:menuWrap -->
+<div class="menuWrap">
+	<div class="all-menu-wrap">
+		<div class="all-menu-info">
+			<div class="all-menu-header">
+				<div class="right-menu">
+                    <a href="javascript:void(0)" class="out">Logout</a>
+                    <a onclick="" class="btn-menu-close">닫기</a>
+				</div>
+			</div>
+			<div class="login-info">
+                <a href="../myp/FILL-APP-MY-001.html">
+                    <div class="profile"></div>
+                </a>
+				<a href="#none" class="login-tit user-m-img">
+					<div class="tit">suph92</div>
+					<div class="txt">kateperrt1004@gmail.com</div>
+				</a>
+			</div>
+		</div>
+		<div class="all-menu-area">
+            <div class="accordion-cont-wrap menuArea">
+                <ul class="accordion-item">
+                    <li class="accordion">
+                        <a href="#none" class="btn-accordion Sell">Sell my house</a>
+                    </li>
+                    <li class="accordion">
+                        <a href="#none" class="btn-accordion Buy">Buy home</a>
+                    </li>
+                    <li class="accordion">
+                        <a href="#none" class="btn-accordion Home">Home Rental</a>
+                    </li>
+                    <li class="accordion">
+                        <a href="#none" class="btn-accordion About">About us</a>
+                    </li>
+                    <li class="accordion on">
+                        <a href="#none" class="btn-accordion Contact">Contact Us</a>
+                        <ul class="accordion-cont on">
+                            <li><a href="#none">- FAQ</a></li>
+                            <li><a href="#none">- Q&A</a></li>
+                            <li><a href="#none">- Terms & Conditions</a></li>
+                            <li><a href="#none">- Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="accordion">
+                        <a href="#none" class="btn-accordion My">My post</a>
+                    </li>
+                </ul>
+            </div>
+		</div>
+	</div>
+</div>
+<!-- e:menuWrap -->
+
+<script>
+// menu open, close
+$(document).ready(function() {
+  $('.btn-menu, .btn-menu-white').on('click', function() {
+    $('#menuWrap').addClass('menu-open');
+
+  });
+
+  $('.btn-menu-close').on('click', function() {
+    $('#menuWrap').removeClass('menu-open');
+  });
+
+  $('.accordion-cont-wrap.menuArea .accordion .btn-accordion').click(function() {
+  var accordionCont = $(this).closest('.accordion').find('.accordion-cont');
+  $(this).parent().toggleClass('on');
+  accordionCont.toggleClass('on');
+});
+});
+</script>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+    <!-- <link rel="stylesheet" href="../resources/css/lib/new_renewal.css"> -->
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+    <!-- <script type="text/javascript" src="../resources/js/lib/ui.js"></script> -->
+</head>
+<style>
+    .guide { padding-top:15px; color:#555555; }
+    .pb10 { padding-top:25px; }
+    .box { border-radius:15px; border:1px solid var(--border); padding:10px; }
+</style>
+<body>
+    <div class="wrap">
+        <!-- //header -->
+        <header id="lnb">
+            <h1>
+                <a href="/">
+                    <img src="../../resources/images/common/logo.png" alt="로고">
+                </a>
+            </h1>
+            <a href="javascript:void(0)" class="btn-menu header-btn" onclick="openMenu('menuWrap')">메뉴</a>
+        </header>
+        <!-- //header -->
+        <!-- s:menuWrap -->
+        <div id="menuWrap">
+            <script>
+            $(document).ready(function(){
+                document.charset="euc-kr";
+                $("#menuWrap").load("./include/inc_menu.html");
+            });
+            </script>
+        </div>
+	    <!-- e:menuWrap -->
+        <form>
+            <div class="contents-wrap">
+                <h2 class="guide">1. Input-Basic</h2>
+                <section class="form-wrap">
+                    <div class="form-group">
+                        <label for="user_name">Nic Name</label>
+                        <input id="user_name" type="text" name="user-name" class="form-control" placeholder="Please enter your nickname">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user_name">Disalbed</label>
+                        <input id="user_name" type="text" name="user-name" class="form-control" placeholder="ok"
+                            disabled><!--disalbed-->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-email">Email Address</label>
+                        <input type="email" name="email" class="form-control" id="user-email"
+                            aria-describedby="emailHelp" placeholder="Please enter your email" inputmode="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-id">ID</label>
+                        <input type="text" class="form-control" id="user-id" placeholder="ID">
+                    </div>
+                    <div class="form-group">
+                        <label for="user-password">password</label>
+                        <input type="password" class="form-control" id="user-password" placeholder="Please enter your PIN number.">
+                    </div>
+                </section>
+                <h2 class="guide">2. Input-Amount</h2>
+                <section class="form-wrap">
+                    <div class="form-group row">
+                        <label for="amount">Price</label>
+                        <div class="amount">
+                            <input type="amount" class="form-control amount-num" id="amount" placeholder="0"
+                                inputmode="numeric"><!--inputmode="numeric" : 세자리 수마다 콤마 적용-->
+                            <span class="amount-txt">₱</span>
+                        </div>
+                    </div>
+                </section>
+
+                <h2 class="guide">3. Input-Basic + Button</h2>
+                <section class="form-wrap">
+                    <div class="form-group">
+                        <label for="user-password">Confirm Password </label>
+                        <input type="password" class="form-control" id="user-password" placeholder="Check your password">
+                        <button type="button" name="dbChecNic" class="checkNic">Confirm</button>
+                    </div>
+                    <div class="form-group address">
+                        <label for="search">Address</label>
+                        <input type="search" id="search" class="form-control" placeholder=""
+                            aria-label="Search Addresses" aria-describedby="user-search"
+                            inputmode="search">
+                        <button type="button" name="edit" class="checkNic">Edit</button>
+                    </div>
+                    <div class="form-group row">
+                        <label for="amount">Net Leasable Area</label>
+                        <div class="amount">
+                            <input type="amount" class="form-control amount-num" id="amount" placeholder="0" inputmode="numeric"><!--inputmode="numeric" : 세자리 수마다 콤마 적용-->
+                            <span id="change1" class="amount-txt">㎡</span>
+                        </div>
+                    </div>
+                    <div class="form-group info-check-buttons">
+                        <label for="check-1" class="check-button trans-check">
+                            <input type="checkbox" id="check-1" name="terms">
+                            <span class="custom-check"></span>
+                            <span id="change2" class="check-txt">Switch ‘sqft’</span>
+                        </label>
+                    </div>
+                </section>
+
+                <h2 class="guide">4. Checkbox/Radio</h2>
+                <section class="form-wrap pb10">
+                    <div class="check-buttons agree">
+                        <label for="check-3" class="check-button">
+                            <input type="checkbox" id="check-3" name="terms">
+                            <span class="custom-check"></span>
+                            <span class="text">Checkbox</span>
+                        </label>
+                    </div>
+                </section>
+
+                <h2 class="guide">5. Select</h2>
+                <section class="form-wrap">
+                    <div class="form-group">
+                        <label for="user_phone" style="margin-bottom: 10px;">Select Title</label><!-- 가져가지 않음 -->
+                        <div class="form-control select"  onclick="openPopupUp('lySel2')"  tabindex="0">
+                            <a href="#none" tabindex="-1"><span>label</span></a>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user_phone" style="margin-bottom: 10px;">Select Title</label><!-- 가져가지 않음 -->
+                        <div class="form-control select"  onclick="openPopupUp('lySel2')"  tabindex="0">
+                            <a href="#none" tabindex="-1"><span>label</span></a>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-control select between" onclick="openPopupUp('lySel')" tabindex="0">
+                            <p>Transation method</p>
+                            <a href="#none" tabindex="-1"><span>Sale</span></a>
+                        </div>
+                    </div>
+                </section>
+                <h2 class="guide">6. textarea</h2>
+                <section>
+                    <div class="text-area line-none">
+                        <textarea type="text" title="성명" id="ipt02" class="inp" name="" value="" placeholder="content" maxlength="" required=""></textarea>
+                    </div>
+                </section>
+            </div>
+        </form>
+    </div>
+</body>
+
+
+</html>
+<div id="lySel" class="layerpopup layer-up" tabindex="0"><!-- [D] 클래스 has-button 추가 시 하단 fixed 버튼 있을 시 스타일 노출-->
+    <div class="content-wrap">
+        <div class="pop-header">
+            <h2 class="pop-title">Transation method</h2>
+            <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+        </div>
+        <div class="ly-scroll-con ly-select">
+            <ul class="ly-select-list">
+                <li><button>Sale</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button>Rent</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="lySel2" class="layerpopup layer-up" tabindex="0"><!-- [D] 클래스 has-button 추가 시 하단 fixed 버튼 있을 시 스타일 노출-->
+    <div class="content-wrap">
+        <div class="pop-header">
+            <h2 class="pop-title">Select Title</h2>
+            <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+        </div>
+        <div class="ly-scroll-con ly-select">
+            <ul class="ly-select-list">
+                <li><button>Option01</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button>Option02</button></li>
+                <li><button>Option03</button></li>
+            </ul>
+        </div>
+    </div>
+</div>

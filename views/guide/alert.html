@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+    
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- //header -->
+        <header id="lnb">
+            <a href="javascript:void(0);" onclick="" class="btn-prev header-btn">이전</a>
+                <h1 class="title">
+                    title
+                </h1>
+                <a href="javascript:void(0)" class="btn-menu header-btn">메뉴</a>
+        </header>
+        <!-- header// -->
+        <!-- s:menuWrap -->
+        <div id="menuWrap">
+            <script>
+            $(document).ready(function(){
+                document.charset="euc-kr";
+                $("#menuWrap").load("../include/inc_menu.html");
+            });
+            </script>
+        </div>
+        <!-- e:menuWrap -->
+        <form>
+            <div class="contents-wrap">
+                <section class="form-wrap">
+                    <div class="btn-wrap">
+                        <a href="#none" class="btn btn-primary" onclick="openPopupUp('message01')">alert
+                        </a><!--서비스 이용약관-->
+                    </div>
+                </section>
+            </div>
+        </form>
+    </div>
+</body>
+<!--알럿창-->
+<div id="message01" class="layerpopup type-alert on" tabindex="0">
+    <div class="content-wrap">
+        <div class="pop-header">
+            <h2 class="pop-title">Title</h2>
+        </div>
+        <div class="ly-cont-wrap">
+            <p class="sub-title">필수 약관을 동의 해주세요.</p>
+        </div>
+        <div class="btn-wrap">
+            <a href="#none" class="btn btn-close">Cancle</a>
+            <a href="#none" class="btn btn-primary">OK</a>
+        </div>
+    </div>
+</div>
+
+</html>

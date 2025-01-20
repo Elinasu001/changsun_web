@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- //header -->
+        <header id="lnb">
+            <script>
+                $(document).ready(function(){
+                    document.charset="euc-kr";
+                    $("#lnb").load("../include/inc_header_sub.html");
+                });
+            </script>
+        </header>
+        <!-- header// -->
+        <!-- s:menuWrap -->
+        <div id="menuWrap">
+            <script>
+            $(document).ready(function(){
+                document.charset="euc-kr";
+                $("#menuWrap").load("../include/inc_menu.html");
+            });
+            </script>
+        </div>
+        <!-- e:menuWrap -->
+        <form>
+            <div class="contents-wrap">
+                
+            </div>
+        </form>
+    </div>
+    <div id="lyPullPop02" class="layerpopup laypop-all" style="position: fixed; top: 0px; left: 0px; display: block;">
+        <div class="content-wrap">
+            <div class="pop-header">
+                <h2 class="pop-title">
+                    My page
+                </h2>
+                <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+            </div>
+    
+            <div class="pop-con-wrap" id="">
+                <section class="join-form">
+                    <div class="form-wrap">
+                        <div class="list-icon-wrap toggle">
+                            <div class="list-icon">
+                                <div>Notification Settings</div><!--알림설정-->
+                                <div class="toggle-wrap">
+                                    <input type="checkbox" id="chkEach07" name="check" value="" class="toggle">
+                                    <label for="chkEach07"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="type-spread line">
+                    <div>선</div>
+                </section>
+                <section class="list-icon-wrap under-line">
+                    <ul class="list-icon no-before">
+                        <li class="list-icon">
+                            <a href="#none">Account Settings</a>
+                        </li>
+                        <li class="list-icon">
+                            <a href="javascript:void(0);" onclick="openPopupUp('account')">Close Account</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+    
+            <section class="fixed-btn-wrap">
+                <div class="btn-wrap">
+                    <button type="button" class="btn btn-primary">OK</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div id="account" class="layerpopup layer-up" tabindex="0" style="position: fixed; top: 559.5px; left: 0px; display: none;">
+        <div class="content-wrap">
+            <div class="pop-header close">
+                <h2 class="pop-title">Transation method</h2>
+            </div>
+            <div class="ly-scroll-con">
+                <div class="text-wrap">
+                    <p>This will remove your login information from our system and you will not be able to login again. It cannot be undone.</p>
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <a href="javascript:void(0);" class="btn btn-close">cancel</a>
+                <a href="./FILL-APP-MY-004.html" class="btn btn-primary">Delete Your Account</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

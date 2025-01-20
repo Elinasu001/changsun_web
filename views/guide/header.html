@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+    <!-- <link rel="stylesheet" href="../resources/css/lib/new_renewal.css"> -->
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+    <!-- <script type="text/javascript" src="../resources/js/lib/ui.js"></script> -->
+</head>
+<style>
+    /* 스타일은 가져가는 거 아님 */
+    .guide > h2 {padding:10px; font-weight: 500; font-size: 1rem; background-color:#EEEEEE ;}
+    .guide header { border-bottom:1px solid #dddddd; }
+    /*가져갈 때 클래스 빼서 가져가기*/
+    .relative { position: relative; height: 40px; background-color: #ffffff; }
+    .black { background-color: #000000; }
+</style>
+
+<body>
+    <div class="wrap">
+        <!-- //header -->
+        <div class="guide">
+            <h2>· Header - main</h2>
+            <header id="lnb" class="relative">
+                <h1>
+                    <a href="/">
+                        <img src="../../resources/images/common/logo.png" alt="로고">
+                    </a>
+                </h1>
+                <a href="javascript:void(0)" class="btn-menu header-btn" onclick="openMenu('menuWrap')">메뉴</a>
+            </header>
+            
+            <h2 style="margin-top:40px;">· Header - sub</h2>
+            <header id="lnb" class="relative">
+                <a href="javascript:void(0);" onclick="" class="btn-prev header-btn">이전</a>
+                <h1 class="title">
+                    title
+                </h1>
+                <a href="javascript:void(0)" class="btn-menu header-btn" onclick="openMenu('menuWrap')">메뉴</a>
+            </header>
+
+            <!-- <h2>· 좌측 - 있음 / 우측 - 공유|하트|메뉴버튼</h2>
+            <header id="lnb" class="relative black">
+                <a href="javascript:void(0);" onclick="" class="btn-prev_white header-btn">이전</a>
+                <div class="btn-group header-btn">
+                    <a href="javascript:void(0)" class="share">공유</a>
+                    <a href="javascript:void(0)" class="heart">하트</a>
+                    <a href="javascript:void(0)" class="btn-menu-white" onclick="openMenu('menuWrap')">메뉴</a>
+                </div>
+            </header> -->
+        </div>
+    </div>
+</body>
+</html>

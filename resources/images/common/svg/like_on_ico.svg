@@ -1,0 +1,14 @@
+<svg id="ico_bookmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_22208" data-name="사각형 22208" width="16.634" height="16.732" fill="#455ae6" stroke="#455ae6" stroke-width="1.5"/>
+    </clipPath>
+  </defs>
+  <circle id="타원_486" data-name="타원 486" cx="15" cy="15" r="15" fill="#fff"/>
+  <g id="그룹_44097" data-name="그룹 44097" transform="translate(6.366 7)">
+    <g id="그룹_44096" data-name="그룹 44096" clip-path="url(#clip-path)">
+      <path id="패스_53702" data-name="패스 53702" d="M21.434,17.87l-4.97-2.8-4.97,2.8V2.5h9.939Z" transform="translate(-8.148 -1.772)" fill="#455ae6" stroke="#455ae6" stroke-linejoin="bevel" stroke-width="1.5"/>
+      <line id="선_1843" data-name="선 1843" x2="16.634" transform="translate(0 0.728)" fill="none" stroke="#455ae6" stroke-linejoin="bevel" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

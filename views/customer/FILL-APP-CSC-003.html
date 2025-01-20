@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+    <link rel="stylesheet" href="../../resources/css/lib/swiper-bundle.min.css">
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- //header -->
+        <header id="lnb">
+            <script>
+                $(document).ready(function(){
+                    document.charset="euc-kr";
+                    $("#lnb").load("../include/inc_header_sub.html");
+                });
+            </script>
+        </header>
+        <!-- header// -->
+        <!-- s:menuWrap -->
+        <div id="menuWrap">
+            <script>
+            $(document).ready(function(){
+                document.charset="euc-kr";
+                $("#menuWrap").load("../include/inc_menu.html");
+            });
+            </script>
+        </div>
+        <!-- e:menuWrap -->
+        <form>
+            <div class="contents-wrap">
+                <section class="text-wrap">
+                    <p class="tit01">Check your inquiry history</p>
+                </section>
+                <section>
+                    <div class="list-icon-wrap table">
+                        <div class="list-group arrow">
+                            <a href="#none">
+                                <p class="tit">I'd like to change my membership information.</p>
+                                <p class="txt">2024.03.28</p>
+                            </a>
+                        </div>
+                        <div class="list-group arrow">
+                            <a href="#none">
+                                <p class="tit">I'd like to change my membership information.</p>
+                                <p class="txt">2024.03.28</p>
+                            </a>
+                        </div>
+                        <div class="list-group arrow">
+                            <a href="#none">
+                                <p class="tit">I'd like to change my membership information.</p>
+                                <p class="txt">2024.03.28</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="fixed-btn-wrap">
+                    <div class="fixed-btn-wrap relative">
+                        <div class="btn-cont-wrap">
+                            <a href="./FILL-APP-CSC-002.html" class="btn btn-primary">Registering</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        }
+    });
+</script>
+
+</html>

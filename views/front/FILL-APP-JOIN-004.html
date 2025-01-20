@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+    
+</head>
+<body>
+    <div class="wrap">
+        <!-- //header -->
+        <header id="lnb">
+            <script>
+                $(document).ready(function(){
+                    document.charset="euc-kr";
+                    $("#lnb").load("../include/inc_header_sub.html");
+                });
+            </script>
+        </header>
+        <!-- header// -->
+        <!-- s:menuWrap -->
+        <div id="menuWrap">
+            <script>
+            $(document).ready(function(){
+                document.charset="euc-kr";
+                $("#menuWrap").load("./include/inc_menu.html");
+            });
+            </script>
+        </div>
+        <!-- e:menuWrap -->
+        <form>
+            <div class="contents-wrap">
+                <section>
+                    <div class="completion-group">
+                        <div class="completion-img"></div>
+                        <p class="tit">Membership registration<br/>
+                            has been completed
+                        </p>
+                        <p class="txt">Congratulations on your subscription&#46;<br/>
+                            You can use the service after logging in&#46;</p>
+                    </div>
+                </section>
+                <section class="fixed-btn-wrap">
+                    <div class="btn-wrap">
+                        <a href="#none" class="btn btn-canpr">Done</a>
+                        <a href="#none" class="btn btn-primary">Sign in</a>
+                    </div>
+                </section>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

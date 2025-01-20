@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+</head>
+
+<body class="scrollX">
+    <div class="wrap">
+        <!-- //header -->
+        <header id="lnb">
+            <script>
+                $(document).ready(function(){
+                    document.charset="euc-kr";
+                    $("#lnb").load("../include/inc_header_sub.html");
+                });
+            </script>
+        </header>
+        <!-- header// -->
+        <!-- s:menuWrap -->
+        <div id="menuWrap">
+            <script>
+            $(document).ready(function(){
+                document.charset="euc-kr";
+                $("#menuWrap").load("./include/inc_menu.html");
+            });
+            </script>
+        </div>
+        <!-- e:menuWrap -->
+        <form>
+            <div class="contents-wrap">
+                <section class="join-img-group">
+                    <div class="join-img join2"></div>
+                    <p>Check your mobile phone<br/>
+                        authentication number</p>
+                </section>
+
+                <section class="join-form">
+                    <div class="text-wrap">
+                        <p class="tit">Enter 4-digit code</p>
+                        <p class="txt">You will receive an SMS code via 8210*****123</p>
+                    </div>
+
+                    <div class="form-wrap">
+                        <div class="form-group form-row">
+                            <span class="col">
+                                <input type="number" class="form-control-round" maxlength="1" title="number">
+                            </span>
+                            <span class="col">
+                                <input type="number" class="form-control-round" maxlength="1" title="number">
+                            </span>
+                            <span class="col">
+                                <input type="number" class="form-control-round" maxlength="1" title="number">
+                            </span>
+                            <span class="col">
+                                <input type="number" class="form-control-round" maxlength="1" title="number">
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="failed">Verification failed</div><!--틀렸을 때-->
+
+                    <div class="af-timer">
+                        <label for="timer">Resend OTP after </label>
+                        <input type="text" id="timer" value="" readonly>
+                    </div>
+                    <div class="af-timer"><!--시간이 다 되었을 때-->
+                        <button href="#none">Resend OTP</button>
+                    </div>
+                </section>
+                <section class="fixed-btn-wrap"><!-- failed되면 안보임 -->
+                    <div class="btn-cont-wrap">
+                        <a href="#none" class="btn btn-primary">Next</a>
+                    </div>
+                </section>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    /** timer **/
+    const Timer = document.getElementById('timer'); //스코어 기록창 -분
+    let time = 240000; //4분
+    let min = 4;
+    let sec = 60;
+
+    Timer.value = min + ":" + '00' + ' ' + 'sec';
+
+    function TIMER(){
+    PLAYTIME=setInterval(function(){
+        time=time-1000; //1초씩 줄어듬
+        min=time/(60*1000);//초를 분으로 나눠준다
+
+        if(sec>0){ //sec=60에서 1씩 빼서 출력해준다
+        sec=sec-1;
+        Timer.value=Math.floor(min) + ':' + sec + ' ' + 'sec'; //실수로 계산되기 때문에 소숫점 아래를 버리고 출력해준다
+        }
+        if(sec===0){ //0에서 -1을 하면 -59가 출력된다 그래서 0이 바로 sec을 60으로 돌려주고 value에는 0을 출력하도록 해준다
+        sec=60;
+        Timer.value=Math.floor(min) + ':' + '00';
+        }
+    },1000); //1초마다
+    }
+
+    TIMER();
+    setTimeout(function(){
+    clearInterval(PLAYTIME);
+    },240000); //3분이 되면 타이머를 삭제한다
+</script>
+
+
+
+
+</html>

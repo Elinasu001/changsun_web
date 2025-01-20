@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+    <link rel="stylesheet" href="../../resources/css/lib/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="../resources/css/lib/new_renewal.css"> -->
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+    <!-- <script type="text/javascript" src="../resources/js/lib/ui.js"></script> -->
+</head>
+<style>
+    /* 스타일은 가져가는 거 아님 */
+    .guide { background-color:#ffffff ; }
+    .guide > h2 {padding: 25px 10px 10px; font-weight: 500; font-size: 1rem;}
+    /*가져갈 때 클래스 빼서 가져가기*/
+    .relative { position: relative; background-color: #ffffff; }
+    .black { background-color: #000000; }
+    .pd-left { padding-left:20px; }
+    .pd-bottom { padding-bottom: 20px; }
+</style>
+<style>
+    /* tab style2 */
+    .style2 { display: flex; justify-content: space-around; background-color:#F4F5FB; }
+    .style2 li { margin: 5px; padding: 15px 0; width: calc(100% / 2); border-radius:10px; }
+    .style2 li a { display:block; width:100%; color:var(--text02);  ; text-align:center; font-size:var(--font-16); font-weight:600; }
+    .style2 li.on { background-color:#455AE6; }
+    .style2 li.on a { color:#ffffff; }
+</style>
+
+<body>
+    <div class="wrap">
+        <!-- //header -->
+        <div class="guide">
+            <h2 class="guide">1. TabButton</h2>
+            <section>
+                <div class="tab">
+                    <ul class="tab-item type2">
+                        <li class="on" data-tab="tab-cont01"><a href="javascript:void(0);" title="선택됨">TAB1</a></li>
+                        <li data-tab="tab-cont02" class=""><a href="javascript:void(0);">TAB2</a></li>
+                        <li data-tab="tab-cont03" class=""><a href="javascript:void(0);">TAB3</a></li>
+                    </ul>
+                    <div id="tab-cont01" class="tab-content">
+                    </div>
+                    <div id="tab-cont02" class="tab-content dp-none">
+                    </div>
+                    <div id="tab-cont03" class="tab-content dp-none">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

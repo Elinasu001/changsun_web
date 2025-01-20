@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../resources/css/lib/renewal.css">
+    <link rel="stylesheet" href="../../resources/css/lib/default.css">
+    <!-- <link rel="stylesheet" href="../resources/css/lib/new_renewal.css"> -->
+
+    <script type="text/javascript" src="../../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/lib/default.js"></script>
+    <!-- <script type="text/javascript" src="../resources/js/lib/ui.js"></script> -->
+</head>
+<style>
+    .guide { padding-top:40px; color:#555555; }
+    .pb10 { margin-top:25px; }
+</style>
+<body>
+    <div class="wrap">
+        <!-- //header -->
+        <header id="lnb">
+            <h1>
+                <a href="/">
+                    <img src="../../resources/images/common/logo.png" alt="로고">
+                </a>
+            </h1>
+            <a href="javascript:void(0)" class="btn-menu header-btn" onclick="openMenu('menuWrap')">메뉴</a>
+        </header>
+        <!-- //header -->
+        <!-- s:menuWrap -->
+        <div id="menuWrap">
+            <script>
+            $(document).ready(function(){
+                document.charset="euc-kr";
+                $("#menuWrap").load("./include/inc_menu.html");
+            });
+            </script>
+        </div>
+	    <!-- e:menuWrap -->
+        <form>
+            <div class="contents-wrap">
+                <section class="another-login">
+                    list-img
+                </section>
+                <h2 class="guide">1. list-group</h2>
+                <section class="list-wrap">
+                    <div class="list-group">
+                        <ul class="img-list">
+                            <li>
+                                <img src="../../resources/images/common/image_1.png" alt="방1">
+                            </li>
+                            <li>
+                                <img src="../../resources/images/common/image_2.png" alt="방2">
+                            </li>
+                        </ul>
+                        <p class="list-tit">₱7,000,000</p>
+                        <div class="list-txt">
+                            <div class="list-sub-tit tooltip-wrap">₱140,000 PSM
+                            </div>
+                            <span class="ic-room">2</span>
+                            <span class="ic-bathtub">2</span>
+                        </div>
+                    </div>
+                </section>
+                <!-- <h2 class="guide">2. list-group2</h2>
+                <section class="list-group2 pb10">
+                    <div class="img-list">
+                        <img src="../../resources/images/common/image_1.png" alt="방1">
+                        <a href="#none" class="btn-set like">찜</a>
+                        <ul class="list-txt">
+                            <li class="list-tit">₱7,000,000</li>
+                            <li class="ic-room">2</li>
+                        </ul>
+                        <ul class="list-txt">
+                            <li class="list-sub-tit">₱140,000 PSM
+                            </li>
+                            <li class="ic-bathtub">2</li>
+                        </ul>
+                    </div>
+                    <div class="img-list">
+                        <img src="../../resources/images/common/image_2.png" alt="방1">
+                        <a href="#none" class="btn-set like">찜</a>
+                        <ul class="list-txt">
+                            <li class="list-tit">₱7,000,000</li>
+                            <li class="ic-room">2</li>
+                        </ul>
+                        <ul class="list-txt">
+                            <li class="list-sub-tit">₱140,000 PSM
+                            </li>
+                            <li class="ic-bathtub">2</li>
+                        </ul>
+                    </div>
+                </section> -->
+
+                <section class="another-login">
+                    list
+                </section>
+
+                <h2 class="guide">1. under-line-list</sapn></h2>
+                <section class="list-icon-wrap under-line pb10">
+                    <ul class="list-icon">
+                        <li class="sell-house">
+                            <a href="#none" >
+                                <span class="tit">Sell my house</span>
+                                <span class="txt">WHat Kind of house are you<br>looking for?</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <h2 class="guide">2. arrow-list<sapn style="font-size:12px;">(arrow 없는거면 no-arrow추가)</sapn></h2>
+                <section class="list-icon-wrap pb10">
+                    <ul class="list-icon">
+                        <li class="google"><a href="#none">Sign up with Google</a></li>
+                        <li class="facebook"><a href="#none">Sign up with Facebook</a></li>
+                        <li class="apple"><a href="#none">Sign up with Apple</a></li>
+                    </ul>
+                </section>
+                <h2 class="guide">3. list-toggle</h2>
+                <section class="list-icon-wrap toggle pb10">
+                    <div class="list-icon">
+                        <div>Notification Settings</div><!--알림설정-->
+                        <div class="toggle-wrap">
+                            <input type="checkbox" id="chkEach07" name="check" value="" class="toggle">
+                            <label for="chkEach07"></label>
+                        </div>
+                    </div>
+                </section>
+                <h2 class="guide">4. togle-list</h2>
+                <section class="accordion-cont-wrap pb10">
+                    <div class="accordion-item qna">
+                        <div class="accordion">
+                            <button type="button" class="btn-accordion">I'd like to change my membership information.</button>
+                            <div class="accordion-cont">
+                                You can change your membership information after logging in from Menu > My Page > My Information Management.
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <button type="button" class="btn-accordion">Where can I withdraw from the
+                                membership?</button>
+                            <div class="accordion-cont">
+                                Membership withdrawal is possible through My Page > My Information Management > Membership withdrawal after logging in.The registered sales information and all membership information will be deleted and cannot be recovered when the membership is withdrawn.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <h2 class="guide">5. customer-list</sapn></h2>
+                <section class="list-icon-wrap table pb10">
+                    <ul class="list-icon no-before">
+                        <li>
+                            <a href="#none">
+                                <p class="tit">I'd like to change my membership information.</p>
+                                <p class="txt">2024.03.28</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <p class="tit">I'd like to change my membership information.</p>
+                                <p class="txt">2024.03.28</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <p class="tit">I'd like to change my membership information.</p>
+                                <p class="txt">2024.03.28</p>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+<div id="lySel" class="layerpopup layer-up" tabindex="0"><!-- [D] 클래스 has-button 추가 시 하단 fixed 버튼 있을 시 스타일 노출-->
+    <div class="content-wrap">
+        <div class="pop-header">
+            <h2 class="pop-title">Transation method</h2>
+            <button type="button" name="button" class="btn-layer-close" data-focus="btn-layer-close">닫기</button>
+        </div>
+        <div class="ly-scroll-con ly-select">
+            <ul class="ly-select-list">
+                <li><button>Sale</button></li><!-- [D] 클래스 active 추가 시 활성화 스타일 노출 -->
+                <li><button>Rent</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
